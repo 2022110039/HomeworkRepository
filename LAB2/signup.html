@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>IPBS_Signup</title>
+        <link rel = "stylesheet" href= "main.css">
+    </head>
+    <body>
+        <div class = "central">
+            <h1>Welcome to IPBS</h1>
+            Internet Programming Book Store
+        </div>
+        <div>
+            <a href = "login.html">로그인</a>
+            <a class = "current" href = "signup.html">회원가입</a>
+        </div>
+        <form method = "GET" action = "https://www.example.com">
+            <p>    
+                개인 정보 (필수)
+            </p>
+            <p>
+                <!-- text, autofocus -->
+                <label>이름: <input name = "name" type = "text" placeholder = "이름을 입력하세요" required autofocus></label>
+            </p>
+            <P>
+                <!-- number, step -->
+                <label>연령대: <input name = "age" type = "number" min = "0" max = "120" step = "10" value = "20"></label>
+                <span class = "ck">연령대를 선택하세요</span>
+            </P>
+            <p>
+                <label>아이디: <input name = "id" type = "text" placeholder = "아이디를 입력하세요" required ></label>
+            </p>
+            <p>
+                <!-- password, required -->
+                <label>비밀번호: <input name = "password" type = "password" placeholder = "비밀번호를 입력하세요" required></label>
+            </p>
+            <p>
+                <!-- email, autocomplete -->
+                <label>이메일: <input name = "email" type = "email" placeholder = "name@gmail.com" autocomplete="on"></label>
+            </p>
+            <p>
+                <!-- tel, placeholder -->
+                <label>전화번호: <input name = "tel" type = "tel" placeholder = "010-1234-5678" pattern = "\d{3}-\d{4}-\d{4}" required></label>
+            </p>
+            <p>
+                개인정보 유효기간:
+                <span class = "ck">
+                    <label><input name = "privacy" type = "radio" value = "1y" checked>1년</label>
+                    <label><input name = "privacy" type = "radio" value = "3y">3년</label>
+                    <label><input name = "privacy" type = "radio" value = "5y">5년</label>
+                    <label><input name = "privacy" type = "radio" value = "10y">10년</label>
+                </span>
+            </p>
+            <p>
+                SNS알림:
+                <span class = "ck">
+                    <label class = "ck"><input name = "sns" type = "checkbox" value = "문자">문자 </label>
+                    <label class = "ck"><input name = "sns" type = "checkbox" value = "카카오톡">카카오톡 </label>
+                    <label class = "ck"><input name = "sns" type = "checkbox" value = "메일">메일 </label>
+                </span>
+            </p>
+            <p>
+                <!-- submit -->
+                <input class = "submit" type = "submit" value = "회원 가입하기">
+            </p>
+        </form>
+
+    </body>
+</html>
